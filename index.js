@@ -10,7 +10,6 @@ const App = () => {
 
   const addName = (event) => {
     event.preventDefault()
-    console.log('button clicked', event.target)
     const nameObject = {
       name: newName,
       num: newNum
@@ -21,11 +20,9 @@ const App = () => {
   }
 
   const handleNameChange = (event) => {
-    console.log(event.target.value)
     setNewName(event.target.value)
   }
   const handleNumChange = (event) => {
-    console.log(event.target.value)
     setNewNum(event.target.value)
   }
 
